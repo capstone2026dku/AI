@@ -13,6 +13,7 @@ AI/
 │
 ├─ src/
 │ ├─ ai/
+│ │ ├─ cooking_time.py   # 요리가 나오는 시간을 예측하는 AI
 │ │ ├─ preference.py     # 취향에 따른 추천 메뉴를 반환하는 AI
 │ │ └─ weather.py        # 날씨에 따른 추천 메뉴를 반환하는 AI
 │ │
@@ -134,6 +135,8 @@ AI/
 |-|-|-|
 | `POST` | `/preference` | 사용자 선호도 기반 메뉴 추천 API |
 | `GET` | `/weather` | 날씨 기반 메뉴 추천 API |
+| `POST` | `/cooking_time` | 요리가 나오는 시간을 예측하는 API |
+| `POST` | `/cooking_time_update` | 실제 요리가 나오는 시간을 업데이트하는 API |
 
 - 위 실행 방법을 따라 진행한 후 `http://localhost:8000/docs`에서 `Swagger`를 사용할 수 있습니다.
 - Node.js 환경에서 API를 사용하기 위한 라이브러리와 예시 코드는 `src/test/` 디렉토리에 있습니다.
